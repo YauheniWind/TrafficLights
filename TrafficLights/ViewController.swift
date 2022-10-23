@@ -20,7 +20,7 @@ class ViewController: UIViewController {
   
   @IBOutlet weak var startNextButtonOutlet: UIButton!
   
-  var trefficCounter: Int = 0
+  private var trefficCounter: Int = 0
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     chengingTrafficLights(firstLight: redView, secondLight: yellowView, thierdLight: greenView)
   }
   
-  func chengingTrafficLights(firstLight: UIView, secondLight: UIView, thierdLight: UIView) {
+  private func chengingTrafficLights(firstLight: UIView, secondLight: UIView, thierdLight: UIView) {
     trefficCounter += 1
     
     switch trefficCounter {
